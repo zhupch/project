@@ -1,0 +1,5 @@
+<?php
+foreach ($_FILES as $value)
+{
+    move_uploaded_file($value['tmp_name'], 'E:/'.$value['name']);
+}
